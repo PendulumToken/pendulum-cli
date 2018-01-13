@@ -1,0 +1,8 @@
+{
+  "name": "pendulum-cli",
+  "app_id": "7193067f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
