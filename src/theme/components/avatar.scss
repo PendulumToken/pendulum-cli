@@ -1,0 +1,49 @@
+ion-avatar {
+	position: relative;
+  width: $item-ios-avatar-size;
+  height: $item-ios-avatar-size;
+  
+  img {
+  	position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    object-fit: fill !important;
+  }
+  
+  ion-badge.badge-ios {
+  	position: absolute;
+  	bottom: 0;
+  	right: 0;
+  	padding: $tiny-space;
+  	font-weight: 500;
+  	font-size: 1.1rem;
+  }
+}
+
+ion-avatar[item-top] {
+	margin-top: 22px !important;
+	margin-bottom: 22px !important;
+}
+
+ion-avatar[small] {
+ 	width: $item-ios-avatar-size - $small-space !important;
+ 	height: $item-ios-avatar-size - $small-space !important; 
+ 	min-width: $item-ios-avatar-size - $small-space !important;
+ 	min-height: $item-ios-avatar-size - $small-space !important;
+ 	
+ 	ion-badge {
+ 		font-size: 1.4rem;
+ 	}	
+}
+
+ion-avatar[large] {
+ 	width: $item-ios-avatar-size + 32 !important;
+ 	height: $item-ios-avatar-size + 32 !important;
+ 	min-width: $item-ios-avatar-size + 32 !important;
+ 	min-height: $item-ios-avatar-size + 32 !important;
+ 	
+ 	ion-badge {
+ 		font-size: 1.4rem;
+ 	}	
+}

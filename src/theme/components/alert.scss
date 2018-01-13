@@ -1,0 +1,13 @@
+ion-alert.alert-ios {
+	.alert-radio-group, .alert-checkbox-group {
+		padding: $small-space 0;
+	}
+	
+	h2.alert-title {
+		font-size: 1.8rem !important;
+	}
+	
+	button {
+		font-weight: 300;
+	}
+}

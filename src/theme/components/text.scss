@@ -1,0 +1,212 @@
+body {
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  word-spacing: $word-spacing-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+  width: 100%;
+  margin: 0 !important;
+  line-height: $line-height-base - 0.1 !important;
+  font-weight: 700 !important;
+  
+  sup {
+  	display: block;
+    width: 100%;
+  	top: 2px;
+  	font-weight: 500;
+    line-height: $line-height-base;
+    color: color($colors, dark-gray);
+  }
+
+  sub {
+    display: block;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+    line-height: $line-height-base;
+    color: color($colors, dark-gray);
+  }
+  
+  ion-icon {
+  	font-size: 1.0em; 
+  }
+}
+
+h1 {
+	font-size: $h1-font-size !important;
+	
+	sub, sup {
+		font-size: 65%;
+	}
+}
+
+h2 {
+	font-size: $h2-font-size !important;
+	
+	sub, sup {
+		font-size: 65%;
+	}
+}
+
+h3 {
+	font-size: $h3-font-size !important;
+	
+	sub, sup {
+		font-size: 65%;
+	}
+}
+
+h4 {
+	font-size: $h4-font-size !important;
+	
+	sub, sup {
+		font-size: 70%;
+	}
+}
+
+h5 {
+	font-size: $h5-font-size !important;
+	
+	sub, sup {
+    font-size: 75%;
+  }
+}
+
+h6 {
+	font-size: $h6-font-size !important;
+	
+	sub, sup {
+    font-size: 80%;
+  }
+}
+
+p {
+	width: 100%;
+  margin: 0;
+  font-weight: 300;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  
+  [color="primary"] {
+  	color: color($colors, primary);
+  }
+  
+  [color="secondary"] {
+  	color: color($colors, secondary);
+  }
+
+  &[offset] {
+    margin-top: -0.2em !important;
+  }
+  
+  ion-icon {
+  	font-size: 1.0em;
+  }
+}
+
+span[ion-text] {
+	display: inline-block;
+}
+
+strong, [strong] {
+  font-weight: 500 !important;
+}
+
+small {
+	font-size: 80% !important;
+}
+
+article {
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: $medium-space !important;
+	}
+	
+	p {
+		margin-bottom: $medium-space !important;
+		line-height: 1.4 !important;
+	} 
+}
+
+[skinny] {
+	font-weight: 300 !important;
+}
+
+[uppercase] {
+	text-transform: uppercase !important;
+}
+
+[lowercase] {
+	text-transform: lowercase !important;
+}
+
+[pre-wrap] {
+	white-space: pre-wrap;
+}
+
+b {
+  font-weight: 700 !important;
+}
+
+[text-shadow] {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.lead {
+	font-weight: 300 !important;
+	font-size: 1.8rem !important;
+}
+
+.description {
+	font-weight: 300 !important;
+  font-size: 1.5rem !important;
+}
+
+.meta { 
+	margin-top: 2px !important;
+	font-weight: 300 !important;
+  font-size: 1.4rem !important;
+  color: color($colors, dark-gray) !important; 
+}
+
+.caption {
+	font-weight: 300 !important; 
+	color: color($colors, dark-gray) !important;
+	text-overflow: clip;
+	white-space: normal;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topic {
+	font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.02em;
+  color: color($colors, primary) !important;
+  text-transform: uppercase;
+}
+
+.excerpt, .excerpt * {
+	font-weight: 300 !important;
+	font-size: 1.4rem !important;
+	color: color($colors, dark-gray) !important; 
+	
+	p {
+		display: inline;
+	}
+}
+
+.no-wrap, [no-wrap] {
+	white-space: normal;
+}
+
+@mixin light-text {
+  h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    color: $white !important;
+  }
+}

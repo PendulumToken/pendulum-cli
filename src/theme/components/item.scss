@@ -1,0 +1,12 @@
+[item-top] {
+	align-self: flex-start;
+	margin-top: $medium-space !important;
+	margin-bottom: $medium-space !important;
+}
+
+ion-item.item-ios {
+	p {
+		margin: 0;
+		line-height: $line-height-base;
+	}
+}

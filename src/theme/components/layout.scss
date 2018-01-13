@@ -1,0 +1,223 @@
+[flex] {
+	display: flex;
+	align-items: center;
+}
+
+[no-margin] {
+	margin: 0 !important;
+}
+
+[no-top-margin] {
+  margin-top: 0 !important;
+}
+
+[tiny-top-margin] {
+  margin-top: $tiny-space !important;
+}
+
+[small-top-margin] {
+  margin-top: $small-space !important;
+}
+
+[top-margin] {
+  margin-top: $medium-space !important;
+}
+
+[large-top-margin] {
+  margin-top: $large-space !important;
+}
+
+[xlarge-top-margin] {
+  margin-top: $xlarge-space !important;
+}
+
+[xxlarge-top-margin] {
+  margin-top: $xxlarge-space !important;
+}
+
+[no-bottom-margin] {
+  margin-bottom: 0 !important;
+}
+
+[tiny-bottom-margin] {
+  margin-bottom: $tiny-space !important;
+}
+
+[small-bottom-margin] {
+  margin-bottom: $small-space !important;
+}
+
+[bottom-margin] {
+  margin-bottom: $medium-space !important;
+}
+
+[large-bottom-margin] {
+  margin-bottom: $large-space !important;
+}
+
+[xlarge-bottom-margin] {
+  margin-bottom: $xlarge-space !important;
+}
+
+[xxlarge-bottom-margin] {
+  margin-bottom: $xxlarge-space !important;
+}
+
+[tiny-left-margin] {
+	margin-left: $tiny-space !important;
+}
+
+[small-left-margin] {
+	margin-left: $small-space !important;
+}
+
+[left-margin] {
+	margin-left: $medium-space !important;
+}
+
+[tiny-right-margin] {
+	margin-right: $tiny-space !important;
+}
+
+[small-right-margin] {
+	margin-right: $small-space !important;
+}
+
+[right-margin] {
+	margin-right: $medium-space !important;
+}
+
+[no-padding] {
+	padding: 0 !important;
+}
+
+[small-padding] {
+	padding: $small-space !important;
+}
+
+[no-top-padding] {
+  padding-top: 0 !important;
+}
+
+[tiny-top-padding] {
+  padding-top: $tiny-space !important;
+}
+
+[small-top-padding] {
+  padding-top: $small-space !important;
+}
+
+[top-padding] {
+  padding-top: $medium-space !important;
+}
+
+[large-top-padding] {
+  padding-top: $large-space !important;
+}
+
+[xlarge-top-padding] {
+  padding-top: $xlarge-space !important;
+}
+
+[xxlarge-top-padding] {
+  padding-top: $xxlarge-space !important;
+}
+
+[no-bottom-padding] {
+  padding-bottom: 0 !important;
+}
+
+[tiny-bottom-padding] {
+  padding-bottom: $tiny-space !important;
+}
+
+[small-bottom-padding] {
+  padding-bottom: $small-space !important;
+}
+
+[bottom-padding] {
+  padding-bottom: $medium-space !important;
+}
+
+[large-bottom-padding] {
+  padding-bottom: $large-space !important;
+}
+
+[xlarge-bottom-padding] {
+  padding-bottom: $xlarge-space !important;
+}
+
+[xxlarge-bottom-padding] {
+  padding-bottom: $xxlarge-space !important;
+}
+
+[tiny-left-padding] {
+  padding-left: $tiny-space !important;
+}
+
+[small-left-padding] {
+  padding-left: $small-space !important;
+}
+
+[left-padding] {
+	padding-left: $medium-space !important;
+}
+
+[large-left-padding] {
+  padding-left: $large-space !important;
+}
+
+[no-right-padding] {
+  padding-right: 0 !important;
+}
+
+[tiny-right-padding] {
+  padding-right: $tiny-space !important;
+}
+
+[small-right-padding] {
+  padding-right: $small-space !important;
+}
+
+[right-padding] {
+  padding-right: $medium-space !important;
+}
+
+[large-right-padding] {
+  padding-right: $large-space !important;
+}
+
+[separator] {
+  border-bottom: $hairlines-width solid $border-color;
+}
+
+[top-border] {
+	border-top: $hairlines-width solid $border-color;
+}
+
+[bottom-border] {
+	border-bottom: $hairlines-width solid $border-color;
+}
+
+[radius] {
+	overflow: hidden;
+	border-radius: $border-radius;
+}
+
+iframe {
+	width: 100%;
+}
+
+/* Allow touch events during loading. */
+.disable-scroll .ion-page {
+  pointer-events: auto !important;
+  touch-action: auto !important;
+}
+
+/* Remove the box-shadow on MD header. */
+.header-md::after,
+.tabs-md[tabsPlacement="top"] > .tabbar::after,
+.footer-md::before,
+.tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  background: none !important;
+}

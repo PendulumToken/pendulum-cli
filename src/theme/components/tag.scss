@@ -1,0 +1,15 @@
+.tag {
+	display: inline-block;
+	margin: $tiny-space $small-space $tiny-space 0;
+	padding: 8px 12px;
+	background-color: color($colors, light);
+	border-radius: 4px;
+	font-weight: 300;
+	font-size: 1.4rem;
+	color: color($colors, dark-gray);
+	
+	&.outline {
+		background-color: white;
+		border: $hairlines-width solid $border-color;
+	}
+}

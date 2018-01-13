@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "apercu";
+	src: url("apercu-light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "apercu";
+	src: url("apercu-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "apercu";
+	src: url("apercu-medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "apercu";
+	src: url("apercu-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}

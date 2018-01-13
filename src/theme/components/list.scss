@@ -1,0 +1,24 @@
+ion-list.list-ios {
+	width: 100%;
+	margin: 0;
+	
+  ion-list-header {
+    border-bottom: 0 !important;
+  }
+  
+	ion-item.item-block, [ion-item] {
+    border-bottom: $hairlines-width solid $border-color;
+    
+    .item-inner {
+    	border-bottom: 0;
+    }
+  }
+  
+  > .item-block:first-child {
+  	border-top: 0;
+  }
+  
+  + hr {
+  	margin: $content-margin 0 !important;
+  }
+}

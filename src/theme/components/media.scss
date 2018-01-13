@@ -1,0 +1,116 @@
+figure {
+  position: relative;
+  width: 100%;
+  margin: 0 !important;
+  overflow: hidden;
+  line-height: 0;
+  
+  span {
+  	line-height: 1;
+  }
+
+  &[aspect-16-9] {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+
+    img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin-top: -22.5%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  &[aspect-4-3] {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 75%;
+
+    img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin-top: -15%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+  
+  &[aspect-5-4] {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80%;
+
+    img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin-top: 0;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  &[aspect-1-1] {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+
+    img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  &.square {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+
+    img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &.shadow {
+    box-shadow: 0 0 $medium-space color($colors, gray);
+  }
+
+  img {
+    width: 100%;
+
+    &.center {
+      position: absolute;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+      left: -100%;
+      right: -100%;
+      top: -100%;
+      bottom: -100%;
+    }
+
+    &.expand {
+      width: 100vw;
+    }
+  }
+}
+
+img.blur {
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}

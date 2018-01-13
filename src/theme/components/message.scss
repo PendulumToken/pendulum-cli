@@ -1,0 +1,93 @@
+$chat-bubble-background-left: color($colors, secondary);
+$chat-bubble-background-right: color($colors, light);
+
+.chat-conversation {
+	.chat-message {
+		position: relative;
+		margin-bottom: $medium-space;
+		font-size: 1.6rem;
+		
+		ion-avatar {
+			position: absolute;
+			top: 0;
+		}
+		
+		.chat-bubble {
+			padding: 0 $medium-space;
+			border-radius: $tiny-space;
+			word-wrap: break-word;
+    	white-space: pre-line;
+		}
+	}
+	
+	.chat-message.left {
+		ion-avatar {
+			left: 0;
+		}
+
+		.chat-bubble {
+			background: $chat-bubble-background-left;
+			color: white;
+			margin-left: 65px;
+		
+			&:after {
+				content: '';
+				position: absolute;
+				left: 65px;
+				top: 0;
+				width: 0;
+				height: 0;
+				border: 12px solid transparent;
+				border-right-color: $chat-bubble-background-left;
+				border-left: 0;
+				border-top: 0;
+				margin-top: 0;
+				margin-left: -6px;
+			}
+		}
+	
+	}
+	
+	.chat-message.right {
+		ion-avatar {
+			right: 0;
+		}
+
+		.chat-bubble {
+			background: $chat-bubble-background-right;
+			margin-right: 65px;
+		
+			&:after {
+				content: '';
+				position: absolute;
+				right: 65px;
+				top: 0;
+				width: 0;
+				height: 0;
+				border: 12px solid transparent;
+				border-left-color: $chat-bubble-background-right;
+				border-right: 0;
+				border-top: 0;
+				margin-top: 0;
+				margin-right: -6px;
+			}
+		}
+	}
+}
+
+.conversation-title, .message-title {
+	text-overflow: clip;
+	white-space: normal;
+}
+
+.conversation-body, .message-body {
+	word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.conversation-meta, .message-meta { 
+	margin-top: $tiny-space; 
+	font-size: 1.3rem;
+	font-weight: 300;
+	color: color($colors, dark-gray) !important;
+}

@@ -1,0 +1,34 @@
+ion-section {
+  display: block;
+  position: relative;
+
+  ion-section-header {
+    display: block;
+    padding: $content-padding;
+    font-weight: 700;
+    font-size: 2.2rem;
+
+    + ion-section-content {
+      padding-top: 0;
+    }
+  }
+
+  ion-section-content {
+    display: block;
+    padding: $content-padding;
+
+    + ion-section-content {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+ion-section.frame {
+	border-bottom: 10px solid color($colors, light);
+	
+	ion-section-content {
+		ion-card {
+			border-top: $hairlines-width solid $border-color;		
+		}
+	}
+}

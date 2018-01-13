@@ -1,0 +1,61 @@
+ion-input {
+	font-weight: 700;
+  font-size: 1.7rem;
+
+  &[large] {
+    font-size: 2.0rem;
+  }
+}
+
+ion-textarea {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-weight: 400;
+  font-size: 1.7rem;
+  
+  textarea.text-input-ios {  	
+	  margin: 0;
+  }
+
+  &[large] {
+    font-size: 2.0rem;
+  }
+  
+}
+
+ion-checkbox, ion-radio {
+  &.invisible {
+    width: 0 !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+  }
+}
+
+input.text-input[disabled] {
+	opacity: 1.0;
+}
+
+.item-ios.item-label-stacked input.text-input,
+.item-ios.item-label-floating input.text-input {
+	margin-top: $medium-space;
+	margin-bottom: $medium-space;
+}
+
+/* FORM ERRORS */
+
+form {
+	ion-item {
+		&.ng-invalid:not(.ng-pristine) {
+			border-bottom: $hairlines-width solid color($colors, danger);	
+		}
+	}
+}
+
+form.submitted {
+	ion-item {
+ 		&.ng-invalid {
+			border-bottom: $hairlines-width solid color($colors, danger);	
+		}	
+ 	}
+}

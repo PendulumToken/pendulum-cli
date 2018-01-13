@@ -1,87 +1,121 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-
-// Font path is used to include ionicons,
-// roboto, and noto sans fonts
 $font-path: "../assets/fonts";
-
-
-// The app direction is used to include
-// rtl styles in your app. For more info, please see:
-// http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
 @import "foundation";
 @import "ionic.globals";
 
-// Shared Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass variables found in Ionic's source scss files.
-// To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
-
-// Named Color Variables
-// --------------------------------------------------
-// Named colors makes it easy to reuse colors on various components.
-// It's highly recommended to change the default colors
-// to match your app's branding. Ionic uses a Sass map of
-// colors so you can add, rename and remove colors as needed.
-// The "primary" color is the only required color in the map.
-
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:                                #6058bc,
+  secondary:                              #fd5c63,
+  danger:                                 #f53d3d,
+  light:                                  #f3f3f3,
+  dark:                                   #444444,
+  gray:                                   #cccccc,
+  dark-gray:                              #708090
 );
 
+// LAYOUT
+$tiny-space:                              4px;
+$small-space:                             8px;
+$medium-space:                            16px;
+$large-space:                             24px;
+$xlarge-space:                            32px;
+$xxlarge-space:                           40px;
+$border-color:                            #dddddd;
+$border-radius:                           6px;
 
-// App iOS Variables
-// --------------------------------------------------
-// iOS only Sass variables can go here
+// TOOLBAR
+$toolbar-background:                      white;
+$toolbar-ios-border-color:                white;
+$toolbar-ios-button-font-size:            1.8rem;
+$toolbar-ios-height:                      50px;
+$toolbar-ios-padding:                     0 $medium-space;
+$toolbar-ios-title-text-color:            color($colors, dark);
+$toolbar-md-height:                       0;
+$toolbar-md-padding:                      0;
 
+// TEXT
+$font-family-base:                        "apercu", sans-serif;
+$font-size-base:                          1.6rem;
+$h1-font-size:                            3.2rem;
+$h2-font-size:                            2.8rem;
+$h3-font-size:                            2.4rem;
+$h4-font-size:                            2.1rem;
+$h5-font-size:                            1.9rem;
+$h6-font-size:                            1.7rem;
+$letter-spacing-base:                     normal;
+$line-height-base:                        1.4;
+$text-color:                              color($colors, dark);
+$word-spacing-base:                       0;
 
+// SEGMENT
+$segment-button-md-font-size:             1.4rem;
 
+// LIST
+$list-border-color:                       $border-color;
+$list-ios-header-letter-spacing:          $letter-spacing-base;
 
-// App Material Design Variables
-// --------------------------------------------------
-// Material Design only Sass variables can go here
+// ITEM
+$list-ios-activated-background-color:     color($colors, light);
+$item-ios-avatar-size:                    60px;
+$item-ios-body-text-font-size:            $font-size-base;
+$item-ios-padding-top:                    $medium-space;
+$item-ios-padding-bottom:                 $medium-space;
+$item-ios-padding-left:                   0;
+$item-ios-padding-right:                  $tiny-space + 4;
+$item-ios-paragraph-font-size:            $font-size-base;
+$item-ios-paragraph-text-color:           $text-color;
+$item-ios-padding-media-top:              $medium-space;
+$item-ios-padding-media-bottom:           $medium-space;
+$item-ios-thumbnail-size:                 60px;
 
+// BUTTON
+$button-ios-font-size:                    1.5rem;
 
+// GRID
+$grid-padding-width:                      0;
 
+// CARD
+$card-ios-box-shadow:                     none;
+$card-ios-margin-top:                     0;
+$card-ios-margin-bottom:                  0;
+$card-ios-margin-start:                   0;
+$card-ios-margin-end:                     0;
 
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
-
-
-
-
-// App Theme
-// --------------------------------------------------
-// Ionic apps can have different themes applied, which can
-// then be future customized. This import comes last
-// so that the above variables are used and Ionic's
-// default are overridden.
+// SEARCH
+$searchbar-md-input-box-shadow:           none;
+ 
+// ALERT
+$alert-ios-border-radius:                 $border-radius;
+$alert-ios-message-empty-padding-bottom:  $small-space;
 
 @import "ionic.theme.default";
-
-
-// Ionicons
-// --------------------------------------------------
-// The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
-
 @import "ionic.ionicons";
-
-
-// Fonts
-// --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";
+
+@import "./components/alert";
+@import "./components/avatar";
+@import "./components/badge";
+@import "./components/brand";
+@import "./components/button";
+@import "./components/card";
+@import "./components/currency";
+@import "./components/fab";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/item";
+@import "./components/list";
+@import "./components/layout";
+@import "./components/media";
+@import "./components/menu";
+@import "./components/message";
+@import "./components/note";
+@import "./components/searchbar";
+@import "./components/section";
+@import "./components/segment";
+@import "./components/tag";
+@import "./components/text";
+@import "./components/thumbnail";
+@import "./components/video";
