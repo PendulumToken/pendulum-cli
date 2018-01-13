@@ -7,12 +7,16 @@ import { SplashScreen } from "@ionic-native/splash-screen";
 import { StatusBar } from "@ionic-native/status-bar";
 
 import { BountyProvider } from "./providers/bounty.provider";
+import { MessageProvider } from "./providers/message.provider";
+import { PageProvider } from "./providers/page.provider";
 import { ProjectProvider } from "./providers/project.provider";
 import { UserProvider } from "./providers/user.provider";
 
 import { MyApp } from "./app.component";
 import { ExplorePage } from "../pages/explore/explore.page";
 import { HomePage } from "../pages/home/home.page";
+
+import { ChromeBlock } from "../blocks/chrome/chrome.block";
 
 import { AutoFocusDirective } from "./directives/autofocus.directive";
 import { ElasticHeaderDirective } from "./directives/elastic-header.directive";
@@ -25,7 +29,9 @@ let components: Array<any> = [
   MyApp,
   
   ExplorePage,
-  HomePage
+  HomePage,
+  
+  ChromeBlock
 ]
 
 let directives: Array<any> = [
@@ -41,6 +47,8 @@ let pipes: Array<any> = [
 
 let providers: Array<any> = [
   BountyProvider,
+  MessageProvider,
+  PageProvider,
   ProjectProvider,
   UserProvider,
   
