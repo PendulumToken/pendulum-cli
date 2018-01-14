@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 
-import { ProjectProvider } from "../../app/providers/project.provider";
+import { CommunityProvider } from "../../app/providers/community.provider";
 import { UserProvider } from "../../app/providers/user.provider";
 
 @Component({
@@ -9,7 +9,7 @@ import { UserProvider } from "../../app/providers/user.provider";
 })
 export class ExplorePage {
 
-  constructor(public projectProvider: ProjectProvider,
+  constructor(public communityProvider: CommunityProvider,
               public userProvider: UserProvider) {
   
   }

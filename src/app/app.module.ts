@@ -7,9 +7,10 @@ import { SplashScreen } from "@ionic-native/splash-screen";
 import { StatusBar } from "@ionic-native/status-bar";
 
 import { BountyProvider } from "./providers/bounty.provider";
+import { CategoryProvider } from "./providers/category.provider";
+import { CommunityProvider } from "./providers/community.provider";
 import { MessageProvider } from "./providers/message.provider";
 import { PageProvider } from "./providers/page.provider";
-import { ProjectProvider } from "./providers/project.provider";
 import { UserProvider } from "./providers/user.provider";
 
 import { MyApp } from "./app.component";
@@ -47,9 +48,10 @@ let pipes: Array<any> = [
 
 let providers: Array<any> = [
   BountyProvider,
+  CategoryProvider,
+  CommunityProvider,
   MessageProvider,
   PageProvider,
-  ProjectProvider,
   UserProvider,
   
   Keyboard,
