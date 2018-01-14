@@ -2,6 +2,14 @@
   <chrome-block></chrome-block>
 </ion-header>
 
-<ion-content>
-  <h1>Explore Page</h1>
+<ion-content padding>
+  <h1>Explore Communities</h1>
+  
+  <ion-grid top-margin>
+    <ion-row>
+      <ion-col col-12 col-md-3 *ngFor="let content of searchFeed.contents">
+        <content-block [content]="content" layout="feed"></content-block>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

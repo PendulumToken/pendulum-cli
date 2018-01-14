@@ -39,15 +39,17 @@ export class CommunityProvider {
     return this.createMockCommunity("urn:community:covo",
                                     "Covo",
                                     "We believe in making every employee and member feel like family. It's what makes us different, and we wouldn't have it any other way.",
-                                    "Covo is amazing, earnest humans embracing life to the fullest.\r\n\r\nCovo is connection, sharing our stories and meals together. \r\n\r\nCovo is community, where diversity and experience ignite potential.\r\n\r\nCovo is meaning and purpose, where you have the opportunity and tools to exceed your expectations.\r\n\r\nCovo is balance \u2013 in life and work.",
+                                    "Covo is amazing, earnest humans embracing life to the fullest.<br/><br/>Covo is connection, sharing our stories and meals together. <br/><br/>Covo is community, where diversity and experience ignite potential.<br/><br/>Covo is meaning and purpose, where you have the opportunity and tools to exceed your expectations.<br/><br/>Covo is balance \u2013 in life and work.",
+                                    "San Francisco",
                                     "urn:category:coworking",
-                                    "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-1/p480x480/10460503_1551382218462291_8294650759174447417_n.png");
+                                    "https://static1.squarespace.com/static/59dbf6afbe42d6289080efa3/5a0bdc23d7bdce2dbdde3da8/5a565e9974b76ce5dcc37335/1515609808317/?format=1500w");
   }
   
   private createMockCommunity(communityUrn: string,
                               name: string,
                               tagline: string,
                               description: string,
+                              location: string,
                               categoryUrn: string,
                               coverImageUrl: string): Community {
     let community = new Community();
@@ -56,6 +58,7 @@ export class CommunityProvider {
     community.name = name;
     community.tagline = tagline;
     community.description = description;
+    community.location = location;
     
     if (categoryUrn) {
       community.category = this.categoryProvider.getCategoryByCategoryUrn(categoryUrn);

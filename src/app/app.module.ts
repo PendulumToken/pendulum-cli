@@ -21,6 +21,8 @@ import { ExplorePage } from "../pages/explore/explore.page";
 import { HomePage } from "../pages/home/home.page";
 
 import { ChromeBlock } from "../blocks/chrome/chrome.block";
+import { CommunityBlock } from "../blocks/community/community.block";
+import { ContentBlock } from "../blocks/content/content.block";
 
 import { AutoFocusDirective } from "./directives/autofocus.directive";
 import { ElasticHeaderDirective } from "./directives/elastic-header.directive";
@@ -35,7 +37,9 @@ let components: Array<any> = [
   ExplorePage,
   HomePage,
   
-  ChromeBlock
+  ChromeBlock,
+  CommunityBlock,
+  ContentBlock
 ]
 
 let directives: Array<any> = [

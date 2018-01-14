@@ -15,7 +15,7 @@ export class ExplorePage {
   public searchFeed: ContentCollection = new ContentCollection();
   
   constructor(public communityProvider: CommunityProvider) {
-  
+    this.initFeed();
   }
   
   public initFeed() {

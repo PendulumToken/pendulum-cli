@@ -7,6 +7,7 @@ export class Community {
   public name: string;
   public tagline: string;
   public description: string;
+  public location: string;
   public category: Category;
   public coverImage: Image;
     

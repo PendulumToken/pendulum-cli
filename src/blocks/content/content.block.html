@@ -1,0 +1,3 @@
+<div *ngIf="content">
+	<community-block [community]="content" [layout]="layout" *ngIf="content.urn.startsWith('urn:community:')"></community-block>	
+</div>

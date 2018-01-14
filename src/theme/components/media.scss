@@ -83,6 +83,15 @@ figure {
   &.shadow {
     box-shadow: 0 0 $medium-space color($colors, gray);
   }
+  
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.05);
+  }
 
   img {
     width: 100%;

@@ -1,0 +1,10 @@
+<ion-card (click)="onViewCommunityDetail()" *ngIf="community">
+  <figure aspect-1-1>
+	  <img [src]="community.coverImage.url"/>
+  </figure>
+  <ion-card-content>
+    <h4><sup *ngIf="community.category">{{community.category.name}}</sup>{{community.name}}</h4>
+    <p small-top-margin [innerHTML]="community.tagline"></p>
+    <p top-margin class="accent">122 fans · 5 bounties</p>
+  </ion-card-content>
+</ion-card>
