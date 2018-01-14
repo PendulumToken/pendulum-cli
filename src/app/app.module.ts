@@ -9,11 +9,14 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { BountyProvider } from "./providers/bounty.provider";
 import { CategoryProvider } from "./providers/category.provider";
 import { CommunityProvider } from "./providers/community.provider";
+import { ExploreProvider } from "./providers/explore.provider";
+import { FeedProvider } from "./providers/feed.provider";
 import { MessageProvider } from "./providers/message.provider";
 import { PageProvider } from "./providers/page.provider";
 import { UserProvider } from "./providers/user.provider";
 
 import { MyApp } from "./app.component";
+import { CommunityDetailPage } from "../pages/community-detail/community-detail.page";
 import { ExplorePage } from "../pages/explore/explore.page";
 import { HomePage } from "../pages/home/home.page";
 
@@ -50,6 +53,8 @@ let providers: Array<any> = [
   BountyProvider,
   CategoryProvider,
   CommunityProvider,
+  ExploreProvider,
+  FeedProvider,
   MessageProvider,
   PageProvider,
   UserProvider,
