@@ -170,15 +170,14 @@ b {
   font-size: 1.5rem !important;
 }
 
-.meta { 
-	margin-top: 2px !important;
+.meta {
 	font-weight: 300 !important;
   font-size: 1.4rem !important;
   color: color($colors, dark-gray) !important; 
 }
 
-.accent {
-  font-weight: 500 !important;
+.annotation {
+  font-weight: 300 !important;
   font-size: 1.3rem !important;
   color: color($colors, primary) !important; 
 }

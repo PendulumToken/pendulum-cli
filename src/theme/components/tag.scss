@@ -1,12 +1,12 @@
 .tag {
 	display: inline-block;
 	margin: $tiny-space $small-space $tiny-space 0;
-	padding: 8px 12px;
+	padding: 4px 8px;
 	background-color: color($colors, light);
 	border-radius: 4px;
 	font-weight: 300;
 	font-size: 1.4rem;
-	color: color($colors, dark-gray);
+	color: color($colors, primary);
 	
 	&.outline {
 		background-color: white;

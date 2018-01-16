@@ -34,6 +34,7 @@ import { SafeUrlPipe } from "./pipes/safeurl.pipe";
 let components: Array<any> = [
   MyApp,
   
+  CommunityDetailPage,
   ExplorePage,
   HomePage,
   

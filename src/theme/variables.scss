@@ -27,8 +27,8 @@ $border-radius:                           6px;
 // TOOLBAR
 $toolbar-background:                      white;
 $toolbar-ios-border-color:                white;
-$toolbar-ios-button-font-size:            1.8rem;
-$toolbar-ios-height:                      50px;
+$toolbar-ios-button-font-size:            1.4rem;
+$toolbar-ios-height:                      60px;
 $toolbar-ios-padding:                     0 $medium-space;
 $toolbar-ios-title-text-color:            color($colors, dark);
 $toolbar-md-height:                       0;
@@ -102,6 +102,7 @@ $alert-ios-message-empty-padding-bottom:  $small-space;
 @import "./components/brand";
 @import "./components/button";
 @import "./components/card";
+@import "./components/chrome";
 @import "./components/currency";
 @import "./components/fab";
 @import "./components/form";
